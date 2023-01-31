@@ -25,13 +25,13 @@
       <h1 role="heading" id="home">Jam Box Studios</h1>
       <nav role="navigation">
         <ul id="nav">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#nav">Products</a></li>
-          <li><a href="#contact">Reservation</a></li>
-          <li><a href="#studio">Studio</a></li>
+          <li><a href="#home" aria-label="Go to Home Section">Home</a></li>
+          <li><a href="#nav" aria-label="Go to Products Section">Products</a></li>
+          <li><a href="#contact" aria-label="Make a Reservation">Reservation</a></li>
+          <li><a href="#studio" aria-label=Go to Contact Section>Studio</a></li>
         </ul>
       </nav>
-      <img src="https://placekitten.com/1200/900" alt="cute kitten" class="banner">
+      <img src="https://placekitten.com/1200/900" alt="cute kitten" class="banner" role="img">
     </header>
     <main role="main" id="main">
       <h2 role="heading">Welcome to Jam Box</h1>
@@ -46,12 +46,12 @@
           <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
         <h2 id="studio" role="heading">Address</h1>
-        <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
-        </p>
+        <ul itemscope itemtype="https://schema.org/PostalAdress">
+        <li>Jambox Studios</li>
+        <li itemprop="streetAddress">123 Guitar Road,</li>
+        <li itemprop="addressLocality">Musicville, Danceistan</li>
+        <li itemprop="postalCode">B3T 0L0</li>
+        </ul>
       </div>
       <div class="contact-section">
         <h2 id="contact" role="heading">Contact Us</h1>
@@ -70,7 +70,7 @@
     </main>
     <footer>
       &copy; 2021 Jam Box Studios
-      <a href="#home">Back to Top</a>
+      <a href="#home" aria-label="Return to Top of Page">Back to Top</a>
     <footer>
   </div>
 </body>
